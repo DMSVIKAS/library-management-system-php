@@ -1,12 +1,13 @@
 <?php
-$host = "localhost";
+$host = "mainline.proxy.rlwy.net";
 $user = "root";
-$pass = "";
-$dbname = "library";
+$password = "hello123";
+$database = "railway";
+$port = 53273;
 
-$db = mysqli_connect($host, $user, $pass, $dbname);
+$db = mysqli_connect($host, $user, $password, $database, $port);
 
 if (!$db) {
-    die("Database connection failed.");
+    exit("Database connection failed.");
 }
 ?>
